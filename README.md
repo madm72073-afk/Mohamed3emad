@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - معرض الأعمال</title>
+    <!-- Bootstrap CSS (عبر الـ CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+            padding: 100px 0;
+        }
+        .skill-badge {
+            font-size: 1.1rem;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القائمة العلوية (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">معرض أعمالي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">نبذة عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">التواصل</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الترحيب (Hero Section) -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">أهلاً بك، أنا [ضع اسمك هنا]</h1>
+            <p class="lead mb-4">مطور واجهات ومصمم مواقع إلكترونية (Front-End Developer)</p>
+            <a href="#projects" class="btn btn-light btn-lg text-primary fw-bold">استعرض أعمالي</a>
+        </div>
+    </section>
+
+    <!-- قسم نبذة عني -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">نبذة عني</h2>
+            <p class="col-md-8 mx-auto text-muted fs-5">
+                طالب شغوف بتطوير وتصميم المواقع الإلكترونية، أسعى دائماً لبناء واجهات مستخدم جذابة ومتجاوبة مع كافة الشاشات باستخدام أحدث تقنيات الويب.
+            </p>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">مهاراتي</h2>
+            <div>
+                <span class="badge bg-primary skill-badge"><i class="fa-brands fa-html5 me-2"></i>HTML5</span>
+                <span class="badge bg-primary skill-badge"><i class="fa-brands fa-css3-alt me-2"></i>CSS3</span>
+                <span class="badge bg-primary skill-badge"><i class="fa-brands fa-bootstrap me-2"></i>Bootstrap 5</span>
+                <span class="badge bg-primary skill-badge"><i class="fa-brands fa-js me-2"></i>JavaScript</span>
+                <span class="badge bg-primary skill-badge"><i class="fa-brands fa-github me-2"></i>Git & GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">أبرز الأعمال</h2>
+            <div class="row g-4">
+                <!-- مشروع 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">مشروع متجر إلكتروني</h5>
+                            <p class="card-text text-muted">تصميم واجهة متجر متجاوبة مع كافة الأجهزة باستخدام HTML و Bootstrap.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض الكود على GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- مشروع 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">تطبيق إدارة المهام</h5>
+                            <p class="card-text text-muted">صفحة تفاعلية لتنظيم وإدارة المهام اليومية بسرعة وسهولة.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض الكود على GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- مشروع 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">موقع شخصي سابق</h5>
+                            <p class="card-text text-muted">نموذج سيرة ذاتية بسيط يعرض المهارات والخبرات بشكل أنيق.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض الكود على GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">تواصل معي</h2>
+            <p class="text-muted">يسعدني التواصل معي لأي استفسارات أو فرص عمل</p>
+            <div class="d-flex justify-content-center gap-3 fs-3 mt-3">
+                <a href="#" class="text-white"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:your-email@example.com" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
